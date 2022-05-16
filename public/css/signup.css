@@ -1,0 +1,161 @@
+@import url(https://www.cdnfonts.com/gotham.font);
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Space+Grotesk&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: white;
+ 
+  background-image: url(/public/assets/images/photo.jpeg);
+  background-size: cover;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(211, 242, 243);
+  padding-left: 20px;
+  border-radius: 15px;
+  color: rgb(35, 189, 195);
+  padding-bottom:20px;
+}
+
+.form h1{
+  margin-left:40%;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  position: absolute;
+  top: 157px;
+  left: 61px;
+  font-weight: 900;
+}
+
+input {
+  width: 84%;
+  padding: 8px;
+  margin: 10px 32px;
+  border-radius: 15px;
+  font-size: 1.1rem;
+  border: 1.5px solid rgb(35, 189, 195);
+}
+input[type="phone"] {
+  padding-left: 110px;
+  width: 70%;
+}
+.cross {
+  position: absolute;
+  right: 40px;
+  font-size: 1.3rem;
+  top: 30px;
+  color: rgb(35, 189, 195);
+}
+
+input[type="button"] {
+  background-color: rgb(35, 189, 195);
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  body{
+    background-repeat: no-repeat;
+    height:100vh;
+    overflow: hidden;
+  }
+  
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-42%, -55%);
+    background-color: rgb(211, 242, 243);
+    padding-left: 20px;
+    border-radius: 15px;
+    color: rgb(35, 189, 195);
+    padding-bottom:20px;
+  }
+
+  .form h1{
+    margin-left:30%;
+  }
+
+  input {
+    margin-left: 0px;
+  }
+  input[type="phone"] {
+    width: 56%;
+  }
+  .flag {
+    left: 30px;
+  }
+  input[type="phone"] {
+    padding-left: 100px;
+    width: 60%;
+  }
+}
+
+@media (min-width:769px) and (max-width: 1200px) {
+  body{
+    background-repeat: no-repeat;
+    height:100vh;
+    overflow: hidden;
+  }
+  input[type="phone"] {
+    padding-left: 100px;
+    width: 67%;
+  }
+}
+
+@media (max-width: 574px) {
+  body{
+    background-repeat: no-repeat;
+    height:100vh;
+    overflow-y: hidden;
+  }
+
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-55%, -55%);
+    background-color: rgb(211, 242, 243);
+    padding-left: 20px;
+    border-radius: 15px;
+    color: rgb(35, 189, 195);
+    padding-bottom:20px;
+    width:80%;
+  }
+
+  .form h1{
+      margin-left:15%;
+  }
+
+  input[type="phone"] {
+    padding-left: 100px;
+    width: 56%;
+  }
+  
+}
+
+@media (max-width: 320px){
+  body{
+    background-repeat: no-repeat;
+    height:100vh;
+    overflow: hidden;
+  }
+
+}
+
+@media (max-width: 280px){
+  input[type="phone"] {
+    padding-left: 100px;
+    width: 44%;
+  }
+
+}

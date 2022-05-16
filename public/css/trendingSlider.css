@@ -1,0 +1,84 @@
+.slider-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width:95%;
+    margin:2.5%;
+}
+.trending-slider {
+    width:100%;
+    display: flex;
+    overflow-x:scroll;
+}
+.trending-slider > .card {
+    min-width:92.5%;
+    margin:0 2.5% 0 0;
+    padding:0 2.5% 0 2.5%;
+    background-color: rgb(200, 238, 240);
+    border-radius:25px;
+    cursor: pointer;
+}
+
+.trending-slider > .card > img {
+    width:100%;
+    border-radius:25px;
+    height:180px;
+}
+.trending-slider > .card > .pos > .area {
+    text-transform: uppercase;
+    font-family: 'Gotham',sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 3px 2px;
+}
+
+.trending-slider > .card > .card-foot {
+  display: flex;
+  justify-content: space-between;
+  margin-top:10px;
+}
+.trending-slider > .card > .card-foot > .pos2 {
+   font-size:1rem;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+.trending-slider > .card > .card-foot > .view {
+    margin: auto 0;
+    padding:8px 14px;
+    background-color:rgb(35, 189, 196);
+    color: white;
+    border-radius:18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: -10px;
+    
+}
+.slideBtn {
+padding: 94px 7px;
+color: white;
+font-size: 2rem;
+background-color:rgb(200, 238, 240);
+border-radius: 20px;
+}
+.slideBtn > i {
+    margin: auto;
+}
+.trend-btn-right {
+    display:flex;
+}
+
+@media only screen and (min-width:600px) {
+    .trending-slider > .card {
+        min-width:42.5%;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    .trending-slider::-webkit-scrollbar {
+        display: none;
+    }
+    .trending-slider > .card {
+        min-width:21.25%;
+        padding:0 1.25% 0 1.25%;
+        margin:0 1.25% 0 0;
+    }
+}

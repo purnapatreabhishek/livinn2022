@@ -1,0 +1,378 @@
+@import url(https://www.cdnfonts.com/gotham.font);
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&family=Space+Grotesk&display=swap");
+body {
+  font-family: "Gothic A1", sans-serif;
+}
+/*.heading {
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin: 25px 0 20px 205px;
+}*/
+
+.fp {
+  font-size: 1.8rem;
+}
+.hide {
+  display: none;
+}
+
+.cityName {
+  text-transform: uppercase;
+}
+.filtered-props {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 250px;
+}
+
+.fil-img-con {
+ 
+  height: auto;
+  border-radius: 22px;
+}
+.fil-img-con img {
+  border-radius: 22px;
+  height: 215px;
+}
+.filtered-prop-child {
+  background-color: rgb(211, 242, 243);
+  padding: 11px;
+  width: 333px;
+  height: auto;
+  margin: 20px;
+  border-radius: 19px;
+  position: relative;
+  zoom: 84%;
+}
+.loc-nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+.lab {
+  text-transform: capitalize;
+}
+
+.filter-head{
+  float: none;
+
+}
+
+.fil-loc {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.vm-btn {
+  color: white;
+  background-color: rgb(35, 189, 196);
+  height: fit-content;
+  padding: -2px;
+  position: absolute;
+  right: -8px;
+  top: 210px;
+  font-family: 'Gotham Light',sans-serif;
+  width: 60px;
+  font-size: 13px;
+  padding: 5px 5px;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+}
+
+.code{
+  font-family: 'Gotham Light',sans-serif;
+  font-weight: 600;
+
+}
+
+
+.rent-parent-con {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  align-items: center;
+}
+.rent-con {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.rent-con .blue{
+  font-family: 'Gotham Light',sans-serif;
+  font-weight: 700!important;
+  margin-top: 0px;
+}
+
+.fas-icon .icon-count{
+  font-size: 1.4rem;
+  font-family: 'Gotham Light',sans-serif;
+}
+
+.bg {
+  font-size: 1.4rem;
+  text-transform: lowercase;
+  margin-left: 5px;
+}
+.bgp {
+  top: 8px;
+  left: 10px;
+  padding: 4px 10px;
+  display: flex;
+  justify-content: flex-start;
+  width: 115px;
+  padding-left: 10px;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.bgp .fa-user{
+  font-size: 18px;
+}
+
+span.gender {
+  font-size: 20px;
+  padding-left: 10px;
+  font-family: 'Gotham Light',sans-serif;
+  font-weight: 900!important;
+  text-transform: uppercase;
+}
+
+.section-wrapper {
+    display: flex;
+    border-top: 1px solid #eee;
+    padding-top:20px;
+    margin-bottom: 50px;
+}
+.main-section {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+}
+.main-header {
+    margin:20px auto;
+    font-family: 'Gotham',sans-serif;
+}
+.filtered-props {
+    margin:0;
+}
+aside {
+  width:250px;
+  position:static;
+  top: 89px;
+  left: 11px;
+  border-right: 1px solid #eee;
+  padding: 8px;
+  background-color: white;
+}
+aside ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+}
+aside ul li {
+  list-style: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+aside ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(35, 189, 196);
+  font-size: 0.8rem;
+}
+.hed {
+  font-weight: 700;
+  margin: 8px -3px;
+}
+.input-con {
+  display: flex;
+  align-items: center;
+}
+.input-con > input {
+  width: fit-content !important;
+}
+.hide-filter {
+    display: none;
+}
+.crs {
+  position: relative;
+  right: -213px;
+  top: 8px;
+  display: none;
+}
+.right1 {
+  position: relative;
+  right: 3px;
+}
+.prop-type {
+  padding: 11px 6px;
+}
+.prop-type input {
+  zoom: 1.4;
+  margin-right: 6px;
+  margin-bottom: 2px;
+}
+.prop-price {
+    font-size: 0.9rem;
+    margin:10px 0;
+}
+/* range slider */
+
+.middle {
+  position: relative;
+  max-width: 500px;
+  padding-bottom:15px;
+}
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 2px;
+  margin:15px 15px;
+}
+
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #c6aee7;
+}
+
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 25%;
+  right: 25%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #23bdc4;
+}
+.slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  border: 2px solid #23bdc4;
+  box-shadow: 0 0 0 0 rgba(98, 0, 238, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.slider > .thumb.left {
+  left: 25%;
+  transform: translate(-15px, -10px);
+}
+.slider > .thumb.pright {
+  right: 25%;
+  transform: translate(15px, -10px);
+}
+.slider > .thumb.hover {
+  box-shadow: 0 0 0 20px rgba(3, 148, 158, 0.1);
+}
+.slider > .thumb.active {
+  box-shadow: 0 0 0 21px rgba(3, 148, 158, 0.1);
+}
+
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+
+@media screen and (max-width: 768px) {
+    .main-section {
+        width:100%;
+    }
+.main-header {
+    width:fit-content;
+    text-align: center !important;
+    font-size: 1.9rem!important;
+    margin: 18px auto auto auto;
+  }
+  .filtered-props {
+    margin: auto;
+    width: 93%;
+    zoom: 112%;
+  }
+  .fil-img-con {
+    width: 325px;
+  }
+  .hide-filter {
+    display:block;
+    margin:25px 15px 0 15px;
+    color: grey;
+  }
+  .section-wrapper {
+      flex-direction: column;
+  }
+  aside {
+    display: block;
+    left: -100%;
+    background: white;
+    padding:2.5%;
+    z-index: 10;
+    height:fit-content;
+    position:absolute;
+    width: 90%;
+    top: 0;
+    bottom: 0;
+  }
+  .aside-left {
+    left:0px;
+    padding-left:8px;
+  }
+  .crs {
+    position: relative;
+    right: -311px;
+    top: 30px;
+    display: inline-block;
+  }
+  .fp {
+    font-size: 1.5rem;
+  }
+
+  .rent-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    margin-left: -7px;
+  }
+  .fes-icons {
+    margin-right: -6px;
+  }
+}
+
+
+@media screen and (max-width: 412px) {
+.main-header {
+  width:fit-content;
+  text-align: center !important;
+  font-size: 1.5rem!important;
+  margin: 18px auto auto auto;
+}
